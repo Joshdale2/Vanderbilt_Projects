@@ -99,9 +99,9 @@ SSH into the control node and follow the steps below:
 - Copy the Filebeat_Playbook.yml to /etc/ansible.
 - Update the /etc/ansible/hosts file to include...
 - 
-	[webservers]
-	0.0.0.0 ansible_python_interpreter=/usr/bin/python3
-	[elk]
-	0.0.0.0 ansible_python_interpreter=/usr/bin/python3
+[webservers]
+0.0.0.0 ansible_python_interpreter=/usr/bin/python3
+[elk]
+0.0.0.0 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
