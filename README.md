@@ -98,14 +98,14 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the Filebeat_Playbook.yml to /etc/ansible.
 - Update the /etc/ansible/hosts file to include... 
-	# List the IP Addresses of your webservers
-	# You should have at least 2 IP addresses
+	List the IP Addresses of your webservers
+	You should have at least 2 IP addresses
 	[webservers]
-	#0.0.0.0 ansible_python_interpreter=/usr/bin/python3
+	0.0.0.0 ansible_python_interpreter=/usr/bin/python3
 
-	# List the IP address of your ELK server
-	# There should only be one IP address
+	List the IP address of your ELK server
+	There should only be one IP address
 	[elk]
-	#0.0.0.0 ansible_python_interpreter=/usr/bin/python3
+	0.0.0.0 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
